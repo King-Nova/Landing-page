@@ -144,11 +144,13 @@ figure {
     display: inline-block;
     height: 200px;
     width: 200px;
+    margin: 10px;
+    
 }
 
 figcaption {
     font-family: Roboto;
-    color: #1f2937
+    color: #e5e7eb;
     font-size: 18px;
 
 }
@@ -158,14 +160,12 @@ figcaption {
     justify-content: center;
     align-items: center;
     background-color: #e5e7eb;
-    font-size: 36px;
+    font-size: 25px;
     font-family: Roboto-light-italic;
-}
-
-blockquote{
-    margin: 
     
 }
+
+    
 figcaption {
     font-size: 20px;
     font-family: Roboto-bold;
@@ -175,7 +175,19 @@ figcaption {
 .Call-to-action {
     background-color: #3882f6;
     margin: 100px;
+    margin-left: 260px;
+    margin-right: 260px;
     border-radius: 10px;
+    display: flex;
+    padding: 50px;
+}
+.call-head {
+    font-size: x-large;
+    font-family: Roboto-bold;
+}
+
+.call-sub {
+    color: #e5e7eb;
 }
 
 .call-left {
@@ -183,6 +195,17 @@ figcaption {
     padding: 10px;
     font-family: Roboto;
     display: flex;
+    flex-direction: column;
+    flex: 1;
+   
 
 }
 
+
+
+.call-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #e5e7eb;
+}
