@@ -11,6 +11,10 @@
     font-family: Roboto-bold;
     src: url(Fonts/Roboto/Roboto-Bold.ttf);
 }
+@font-face {
+    font-family: Roboto-light-italic;
+    src: url(Fonts/Roboto/Roboto-LightItalic.ttf);
+}
 
 header,
 footer {
@@ -20,6 +24,13 @@ footer {
     margin: 0%;
     padding: 0%;
    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
 }
 
 
@@ -63,7 +74,7 @@ li {
 
 .Box-1 {
     background-color: #1f2937;
-    color: white;
+    color: #e5e7eb;
     font-family: Roboto;
     margin: 0px;
     display: flex;
@@ -82,6 +93,16 @@ img {
     flex: 1;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 13px;
+    font-family: Roboto-bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .head-text {
@@ -137,5 +158,31 @@ figcaption {
     justify-content: center;
     align-items: center;
     background-color: #e5e7eb;
+    font-size: 36px;
+    font-family: Roboto-light-italic;
+}
+
+blockquote{
+    margin: 
+    
+}
+figcaption {
+    font-size: 20px;
+    font-family: Roboto-bold;
+    color: #1f2937;
+}
+
+.Call-to-action {
+    background-color: #3882f6;
+    margin: 100px;
+    border-radius: 10px;
+}
+
+.call-left {
+    color: #f9faf8;
+    padding: 10px;
+    font-family: Roboto;
+    display: flex;
+
 }
 
