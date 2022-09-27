@@ -1,7 +1,75 @@
+/* DEFAULT SETUP */
+
 * {
-    margin: 0%;
-    padding: 0%;
+    box-sizing: border-box;
 }
+
+picture {
+    display: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a, li a, h2 a, h3 a {
+    display: inline-block;
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* SETTINGS */
+
+html {
+    --color: 
+}
+
+
+/* DEV STYLES */
+
+/* body * {
+    border: 1px solid blue;
+    padding: 2px;
+} */
+
+/* site structure */
+
+section {
+    min-height: 200px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+main {
+    flex-grow: 1;
+}
+
+
+inner-column {
+    display: block;
+    padding: 10px;
+    width: 98%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* TYPOGRAPHY */
 
 @font-face {
     font-family: Roboto;
@@ -15,14 +83,132 @@
     font-family: Roboto-light-italic;
     src: url(Fonts/Roboto/Roboto-LightItalic.ttf);
 }
+@font-face {
+    font-family: Roboto-light;
+    src: url(Fonts/Roboto/Roboto-Light.ttf);
+}
+
+
+/* COMPONENTS */
+.button {
+    display: inline-block;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 13px;
+    font-family: Roboto-bold;
+    margin: 10px;
+    padding: 10px 10px;
+    border-radius: 6px;
+
+}
+
+product-card {
+    display: block;
+}
+
+
+/* MODULES */
+
+header inner-column {
+    margin: 10px;
+    padding: 10px;
+}
+
+.Box1 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  
+
+}
+
+.Box1 picture {
+    max-width: 600px;
+
+}
+
+.Box1 text-content {
+    display: block;
+}
+
+
+@media (min-width: 700px) {
+    .Box1 {
+       flex-direction: row;
+        
+        
+    }
+    .Box1 :is(text-content, picture) {
+        flex-basis: 50%;
+       /* border: 1px solid blue; */
+       
+    }
+}
+
+.salut {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-family: Roboto;
+
+}
+
+.salut h1 {
+    font-size: 48px;
+    font-family: Roboto-bold;
+    color: #f9faf8;
+}
+
+.salut p {
+    font-size: 18px;
+}
+
+products-grid {
+    display: block;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+products-grid div {
+    font-family: Roboto-bold;
+    font-size: 36px;
+    color: #1f2937;
+
+}
+
+products-grid .products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1em;
+}
+
+.products-list text-content {
+    font-size: 16px;
+    font-family: Roboto-light;
+    color: #1f2937;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+}
+
+.Quote {
+    font-size: 36px;
+    font-family: Roboto-light-italic;
+    color: #1f2937;
+}
+
 
 header,
 footer {
     background-color: #1f2937;
     color: white;
     font-family: Roboto;
-    margin: 0%;
-    padding: 0%;
+   
    
 }
 
@@ -95,15 +281,6 @@ img {
     align-items: center;
 }
 
-button {
-    background-color: #3882f6;
-    color: #f9faf8;
-    font-size: 13px;
-    font-family: Roboto-bold;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 10px;
-}
 
 .head-text {
     font-family: Roboto-bold;
