@@ -26,6 +26,9 @@ p a, li a, h2 a, h3 a {
     text-decoration: underline;
 }
 
+ul {
+    list-style: none;
+}
 
 /* SETTINGS */
 
@@ -44,7 +47,7 @@ html {
 /* site structure */
 
 section {
-    min-height: 200px;
+    min-height: 300px;
 }
 
 body {
@@ -63,7 +66,7 @@ inner-column {
     display: block;
     padding: 10px;
     width: 98%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -94,10 +97,10 @@ inner-column {
     display: inline-block;
     background-color: #3882f6;
     color: #f9faf8;
-    font-size: 13px;
+    font-size: 18px;
     font-family: Roboto-bold;
     margin: 10px;
-    padding: 10px 10px;
+    padding: 15px 10px;
     border-radius: 6px;
 
 }
@@ -113,6 +116,24 @@ header inner-column {
     margin: 10px;
     padding: 10px;
 }
+
+.logo {
+    display: block;
+    margin: 20px;
+    float: left;
+    margin-left: 100px;
+    font-family: Roboto-bold;
+    font-size: 30px;
+}
+
+
+.logo-link {
+    display: inline-block;
+    float: right;
+    margin: 20px;
+    color: #e5e7eb;
+}
+
 
 .Box1 {
     display: block;
@@ -192,8 +213,24 @@ products-grid .products-list {
     color: #1f2937;
 }
 
-.quote-section {
+.quote {
     background-color: #e5e7eb;
+    display: block;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.Quote {
+    display: block;
+    text-align: justify;
+}
+
+.quote-section quote-source {
+    font-size: 22px;
+    font-family: Roboto-bold;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .Quote {
@@ -202,6 +239,43 @@ products-grid .products-list {
     color: #1f2937;
 }
 
+.call {
+    background-color: #3882f6;
+    display: flex;
+    flex-grow: 0;
+   padding: 55px;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin-top: 10vh;
+   margin-bottom: 15vh;
+    border-radius: 6px;
+}
+
+.call-left {
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.call-right {
+    color: #f9faf8;
+    border-radius: 6px;
+    justify-self: left;
+    display: flex;
+    flex: 0%;
+    padding: 0;
+}
+
+.call-right .button2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Roboto;
+    border: 1px solid #f9faf8;
+    border-radius: 6px;
+    font-size: 22px;
+}
 
 header,
 footer {
@@ -220,144 +294,7 @@ footer {
 }
 
 
-body {
-    display: flex;
-    flex-direction: column;
-}
 
-.logo {
-    font-size: 24px;
-    color: #f9faf8;
-    font-family: Roboto-bold;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-left: 5em;
-    margin-top:  10px;
-}
-
-a:link {
-    text-decoration: none;
-    color: #e5e7eb;
-    font-size: 18px;
-}
-.header-links {
-    display: flex;
-    justify-content: right;
-   
-}
-ul {
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-}
-
-li {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.Box-1 {
-    background-color: #1f2937;
-    color: #e5e7eb;
-    font-family: Roboto;
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-
-}
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
-.Box1-Left {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.head-text {
-    font-family: Roboto-bold;
-    font-size: 48px;
-    color: #f9faf8;
-}
-
-.Box1-Right {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 300px;
-    margin: 100px;
-}
-
-button {
-    max-width: 150px;
-    max-height: 50px;
-}
-
-.Box-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.info {
-    font-family: Roboto-bold;
-    font-size: 36px;
-    font-weight: bolder;
-    color: #1f2937;
-}
-
-figure {
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    
-}
-
-figcaption {
-    font-family: Roboto;
-    color: #e5e7eb;
-    font-size: 18px;
-
-}
-
-.Box-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e5e7eb;
-    font-size: 25px;
-    font-family: Roboto-light-italic;
-    
-}
-
-    
-figcaption {
-    font-size: 20px;
-    font-family: Roboto-bold;
-    color: #1f2937;
-}
-
-.Call-to-action {
-    background-color: #3882f6;
-    margin: 100px;
-    margin-left: 260px;
-    margin-right: 260px;
-    border-radius: 10px;
-    display: flex;
-    padding: 50px;
-}
 .call-head {
     font-size: x-large;
     font-family: Roboto-bold;
@@ -377,7 +314,6 @@ figcaption {
    
 
 }
-
 
 
 .call-right {
