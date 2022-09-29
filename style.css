@@ -127,7 +127,7 @@ header inner-column {
 }
 
 
-.logo-link {
+.logo-link a {
     display: inline-block;
     float: right;
     margin: 20px;
