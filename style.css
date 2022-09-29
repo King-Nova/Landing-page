@@ -132,6 +132,7 @@ header inner-column {
     float: right;
     margin: 20px;
     color: #e5e7eb;
+    margin-right: 0%;
 }
 
 
@@ -211,6 +212,11 @@ products-grid .products-list {
     font-size: 16px;
     font-family: Roboto-light;
     color: #1f2937;
+}
+
+product-card picture {
+    border: 5px solid #3882f6;
+    border-radius: 6px;
 }
 
 .quote {
